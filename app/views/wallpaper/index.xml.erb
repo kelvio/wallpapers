@@ -1,5 +1,5 @@
 <wallpapers>
   <% @wallpapers.each do |wallpaper| %>
-  <wallpaper id="<%= wallpaper.id %>" name="<%= wallpaper.name %>" />
+  <wallpaper id="<%= wallpaper.id %>" name="<%= wallpaper.name %>" ourl="<%= wallpaper.original_url %>" turl="<%= wallpaper.thumb %>" />
   <% end %>
 </wallpapers>
