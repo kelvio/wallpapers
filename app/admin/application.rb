@@ -1,4 +1,4 @@
-ActiveAdmin.register Category do
+ActiveAdmin.register Application do
 
 
   # See permitted parameters documentation:
@@ -14,7 +14,6 @@ ActiveAdmin.register Category do
   #   permitted
   # end
 
-  permit_params :name, :application_id
-
+  permit_params :name
 
 end
