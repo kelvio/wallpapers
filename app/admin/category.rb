@@ -14,7 +14,7 @@ ActiveAdmin.register Category do
   #   permitted
   # end
 
-  permit_params :name, :application_id
+  permit_params :name, :application_id, :url_icon
 
 
 end

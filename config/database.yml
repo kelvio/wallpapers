@@ -24,7 +24,7 @@ production:
   host: localhost
   adapter: postgresql
   encoding: utf8
-  database: moto-g-wallpapers-prod
+  database: wallpapers-prod
   pool: 90
   username: postgres
   password: RbakGRWnxd0mJ3SHyptDt73Nz+5FahFh1db7VA==

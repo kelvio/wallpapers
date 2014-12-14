@@ -1,5 +1,13 @@
 <categories>
   <% @categories.each do |category| %>
-  <category id="<%= category.id %>" name="<%= category.name %>" iurl="<%= category.url_icon %>" />
+  <% if @include_wallpapers %>
+    <category id="<%= category.id %>" name="<%= category.name %>" iurl="<%= category.url_icon %>" >
+        <% category.wallpapers.each do |wallpaper| %>
+        <wallpaper id="<%= wallpaper.id %>" name="<%= wallpaper.name %>" ourl="<%= wallpaper.original_url %>" turl="<%= wallpaper.thumb %>" />
+        <% end %>
+    </category>
+  <% else %>
+    <category id="<%= category.id %>" name="<%= category.name %>" iurl="<%= category.url_icon %>" />
+  <% end %>
   <% end %>
 </categories>
